@@ -66,18 +66,34 @@ content {
 }
 
 #hours {
-    font-family: 'Tech Mono', 'sans-serif';
     color: #ff4e45;
 }
 
 #minutes {
-    font-family: 'Tech Mono', 'sans-serif';
     color: #e3ff45;
 }
 
+.after{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.3em;
+}
+
+.secondcolon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
 #seconds {
-    font-family: 'Tech Mono', 'sans-serif';
     color: #2a933d;
+}
+
+#ampm {
+    color: #fff;
 }
 
 .center {
@@ -85,4 +101,17 @@ content {
     text-align: center;
     color: #fff;
     font-weight: normal;
+}
+
+@media only screen and (max-width: 524px){
+
+    .clock{
+        width: 15em;
+        height: 15em;
+    }
+
+    .result{
+        font-size: 3em;
+    }
+
 }
